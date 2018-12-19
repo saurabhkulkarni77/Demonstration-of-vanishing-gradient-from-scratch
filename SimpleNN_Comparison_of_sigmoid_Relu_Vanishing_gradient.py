@@ -5,6 +5,7 @@
  #So why clipping doesnt solve vanishing gradient problem? because in vanishing gradient value gets smaller and smaller
  #and it doesnt make sense to clip it.. so why not just bump it?, consider this scenerio where if we bump it by some value then
  #its like trying to say hey 50th word doesnt make sense lets go to 100th word which will (?) make sense.. so it doesnt work here either..
+#For this, we will initialize Ws to identity matrix I and f(z) = rect(z) = max(z,0)
 import numpy as np
 import matplotlib.pyplot as plt
 N = 100 # number of points per class
