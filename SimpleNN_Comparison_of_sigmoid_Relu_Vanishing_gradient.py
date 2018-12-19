@@ -1,3 +1,7 @@
+
+#For exploding gradient problem:
+ #First introduced by mikolov. Its states that if value is above threshold value just cap it to 5 or something low.
+ #Although being simplle it makes huge difference in RNNs
 import numpy as np
 import matplotlib.pyplot as plt
 N = 100 # number of points per class
